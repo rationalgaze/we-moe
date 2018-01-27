@@ -8,13 +8,15 @@ class Accueil extends CI_Controller {
     $this->load->helper('url_helper');
   }
 
-  public function afficher($page = 'main')
+  public function afficher()
   {
-    $data['title'] = ucfirst($page); // Capitalize the first letter
+    $data = $this->db_model->get_mongo();
 
-    $this->load->view('templates/header', $data);
-    $this->load->view($page, $data);
-    $this->load->view('templates/footer', $data);
+    // echo '<pre>';
+    // print_r($data[0]['features']);
+      $this->load->view('templates/header');
+      $this->load->view('main', $data[0]);
+      $this->load->view('templates/footer');
   }
 
 }
