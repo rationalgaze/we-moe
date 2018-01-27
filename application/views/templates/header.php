@@ -12,8 +12,8 @@
 </head>
 <body>
   <header>
-    Tadamm !
+    Auwfull header
   </header>
   <main>
     <div class="row">
-      <div class="small-12 column">
+      <div class="small-12 column"> 
