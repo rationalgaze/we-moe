@@ -10,13 +10,13 @@ class Accueil extends CI_Controller {
 
   public function afficher()
   {
-    $data = $this->db_model->get_mongo();
-
-    // echo '<pre>';
-    // print_r($data[0]['features']);
-      $this->load->view('templates/header');
-      $this->load->view('main', $data[0]);
-      $this->load->view('templates/footer');
+    $data['mongo'] = $this->db_model->get_mongo();
+    $data['mysql'] = $this->db_model->get_mysql();
+    echo '<pre>';
+    print_r($data['mysql']);
+      // $this->load->view('templates/header');
+      // $this->load->view('main', $data);
+      // $this->load->view('templates/footer');
   }
 
 }

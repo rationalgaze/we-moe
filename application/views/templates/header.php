@@ -6,14 +6,16 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <title>we-moë</title>
     <link rel="stylesheet" href='<?php echo base_url();?>styles/main.css'>
+    <link rel="stylesheet" href='<?php echo base_url();?>styles/bootstrap.min.css'>
     <link href="<?php echo base_url(); ?>fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css"/> 
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 </head>
 <body>
-  <header>
-    Auwfull header
-  </header>
-  <main>
-    <div class="row">
-      <div class="small-12 column"> 
+  <div class="container-fluid">
+    <header>
+      Auwfull header
+    </header>
+    <main>
+      <div class="row">
+        <div class="col column"> 
