@@ -10,7 +10,7 @@ class Db_model extends CI_Model {
     public function get_mongo()
     {
       $query = $this->mongo_db->get('accidents2015');
-      return $query[0];
+      return $query;
     }
 
     public function get_mysql()
