@@ -15,6 +15,14 @@ body {
     padding: 3rem 2rem;
 }
 
+.nav {
+  font-weight: 700;
+}
+
+.nav a {
+  color: #90a4ae;
+}
+
 .blog-footer {
     padding: 2.5rem 0;
     color: #999;

@@ -28,11 +28,11 @@
   <div class="container">
     <div class="nav py-1 mb-2 justify-content-center">
       <nav class="nav d-flex">
-        <a class="p-2 text-muted text-uppercase" href="#">Acceuil</a>
-        <a class="p-2 text-muted text-uppercase" href="#">Genèse du projet</a>
-        <a class="p-2 text-muted text-uppercase" href="#">L'équipe</a>
-        <a class="p-2 text-muted text-uppercase" href="#">Enquête</a>
-        <a class="p-2 text-muted text-uppercase" href="#">Contact</a>
+        <a class="p-2 text-uppercase" href="#">Acceuil</a>
+        <a class="p-2 text-uppercase" href="#">Genèse du projet</a>
+        <a class="p-2 text-uppercase" href="#">L'équipe</a>
+        <a class="p-2 text-uppercase" href="#">Enquête</a>
+        <a class="p-2 text-uppercase" href="#">Contact</a>
       </nav>
     </div>
     <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
