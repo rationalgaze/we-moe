@@ -1,6 +1,7 @@
   </div>
       </div>
     </main>
+    </div>
     <footer class="blog-footer">
       <p>
         <a href="<?php echo base_url(); ?>" class="logo">
@@ -11,6 +12,5 @@
     </footer>
     <script src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>js/main.js"></script>
-  </div>
 </body>
 </html>
