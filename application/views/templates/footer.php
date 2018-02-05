@@ -1,7 +1,6 @@
-  </div>
+        </div>
       </div>
     </main>
-    </div>
     <footer class="blog-footer">
       <p>
         <a href="<?php echo base_url(); ?>" class="logo">
