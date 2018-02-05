@@ -12,20 +12,20 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header class="blog-header py-3">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pt-1">
-          <a class="text-muted" href="#">S'inscrire</a>
-        </div>
-        <div class="col-4 text-center">
-          <a class="blog-header-logo text-dark text-uppercase" href="#"><img src="<?php echo base_url();?>images/cropped-logoWeMoe.jpg" alt=""></a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-          <a class="btn btn-sm btn-outline-secondary" href="#">Se connecter</a>
-        </div>
+  <header class="blog-header mb-2">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="text-muted" href="#">S'inscrire</a>
       </div>
-    </header>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo" href="#"><img src="<?php echo base_url();?>images/cropped-logoWeMoe.jpg" alt="we-moë logo"></a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-secondary" href="#">Se connecter</a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
     <div class="nav py-1 mb-2 justify-content-center">
       <nav class="nav d-flex">
         <a class="p-2 text-muted text-uppercase" href="#">Acceuil</a>
