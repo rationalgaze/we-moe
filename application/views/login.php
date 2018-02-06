@@ -15,27 +15,12 @@
         <div class="signupForm">
           <form method="post" action="<?php echo base_url(); ?>index.php/">
             <div class="form-group">
-              <label for="nom">Nom <span class="star">*</span></label>
-              <input type="text" name="nom" class="form-control form-control-lg" id="nom" placeholder="Nom">
-              <span><?php echo form_error('nom'); ?></span>
-            </div>
-            <div class="form-group">
-              <label for="nomdusage">Nom d'usage</label>
-              <input type="text" name="nomdusage" class="form-control form-control-lg" id="nomdusage" placeholder="Nom d'usage">
-              <span><?php echo form_error('nomdusage'); ?></span>
-            </div>
-            <div class="form-group">
-              <label for="prenom">Preprenom <span class="star">*</span></label>
-              <input type="text" name="prenom" class="form-control form-control-lg" id="prenom" placeholder="Prenom">
-              <span><?php echo form_error('prenom'); ?></span>
-            </div>
-            <div class="form-group">
-              <label for="id">Identifiant <span class="star">*</span></label>
-              <input type="text" name="id" class="form-control form-control-lg" id="id" placeholder ="Identifiant">
+              <label for="id">Identifiant</label>
+              <input type="text" name="id" class="form-control form-control-lg" id="id" onfocus="if(this.value =='Identifiant'){this.value =''}" onblur="if(this.value ==''){this.value ='Identifiant'}" value ="Identifiant">
               <span><?php echo form_error('id'); ?></span>
             </div>
             <div class="form-group">
-              <label for="mdp">Mot de passe <span class="star">*</span></label>
+              <label for="mdp">Mot de passe</label>
               <input type="password" name="mdp" class="form-control form-control-lg" id="mdp" onfocus="if(this.value =='Mot de passe'){this.value =''}" onblur="if(this.value ==''){this.value ='Mot de pass'}" value ="Mot de passe">
               <span><?php echo form_error('mdp'); ?></span>
             </div>

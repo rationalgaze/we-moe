@@ -21,7 +21,7 @@
         <a class="blog-header-logo" href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/cropped-logoWeMoe.jpg" alt="we-moë logo"></a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="btn btn-sm btn-outline-secondary" href="#">Se connecter</a>
+        <a class="btn btn-sm btn-outline-secondary" href="<?php echo base_url();?>index.php/login/signin">Se connecter</a>
       </div>
     </div>
   </header>
