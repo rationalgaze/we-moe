@@ -13,7 +13,7 @@
     <div class="row mb-2 justify-content-center">
       <div class="col-4"> 
         <div class="signupForm">
-          <form method="post" action="<?php echo base_url(); ?>index.php/">
+          <form method="post" action="<?php echo base_url(); ?>index.php/login/login_validation">
             <div class="form-group">
               <label for="id">Identifiant</label>
               <input type="text" name="id" class="form-control form-control-lg" id="id" onfocus="if(this.value =='Identifiant'){this.value =''}" onblur="if(this.value ==''){this.value ='Identifiant'}" value ="Identifiant">

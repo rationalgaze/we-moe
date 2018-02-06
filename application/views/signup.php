@@ -13,7 +13,7 @@
     <div class="row mb-2 justify-content-center">
       <div class="col-4"> 
         <div class="signupForm">
-          <form method="post" action="<?php echo base_url(); ?>index.php/">
+          <form method="post" action="<?php echo base_url(); ?>index.php">
             <div class="form-group">
               <label for="nom">Nom <span class="star">*</span></label>
               <input type="text" name="nom" class="form-control form-control-lg" id="nom" placeholder="Nom">
