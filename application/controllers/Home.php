@@ -7,14 +7,14 @@ class Home extends CI_Controller {
     $this->load->helper('url_helper');
   }
 
-  public function lister()
+  public function afficher($page = 'main')
   {
+    $data['title'] = ucfirst($page); // Capitalize the first letter
 
-    $data['news'] = 'toto';//$this->db_model->get_mongo();
-    
-    $this->load->view('templates/header');
-    $this->load->view('main', $data);
-    $this->load->view('templates/footer');
+    $this->load->helper('url');
+    $this->load->view('templates/header', $data);
+    $this->load->view($page, $data);
+    $this->load->view('templates/footer', $data);
   }
 
 }

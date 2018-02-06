@@ -21,6 +21,16 @@ body {
 
 .nav a {
   color: #90a4ae;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active,
+nav a.active,
+nav a:focus {
+  text-decoration: none;
+  color: #455a64;
 }
 
 .blog-footer {
@@ -32,5 +42,5 @@ body {
 }
 
 main {
-  min-height: 30vh;
+  min-height: 60vh;
 }
