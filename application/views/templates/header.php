@@ -5,11 +5,10 @@
     <meta name="description" content="Awesome Description Here">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <title>we-moë</title>
-    <link rel="stylesheet" href='http://wemoe.fr/styles/main.css'>
+    <link rel="stylesheet" href='<?php echo base_url();?>styles/main.css'>
     <link rel="stylesheet" href='<?php echo base_url();?>styles/bootstrap.min.css'>
-    <link href="<?php echo base_url(); ?>fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css"/> 
-    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href='<?php echo base_url();?>styles/fontawesome-all.min.css'>
+    <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
 </head>
 <body>
   <header class="blog-header mb-2">

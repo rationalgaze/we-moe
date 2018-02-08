@@ -32,13 +32,13 @@ class Login extends CI_Controller {
       }  
       else  
       {  
-        $this->session->set_flashdata('error', 'Invalid Username and Password');  
+        $this->session->set_flashdata('error', 'Idetifiant ou mot de passe incorrect');  
         redirect(base_url().'index.php/login/signin');  
       }  
     }
     else
     {
-      $this->login();
+      $this->signIn();
     }
   }
 

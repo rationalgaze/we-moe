@@ -25,18 +25,18 @@
               <span><?php echo form_error('nomdusage'); ?></span>
             </div>
             <div class="form-group">
-              <label for="prenom">Preprenom <span class="star">*</span></label>
+              <label for="prenom">Prenom <span class="star">*</span></label>
               <input type="text" name="prenom" class="form-control form-control-lg" id="prenom" placeholder="Prenom">
               <span><?php echo form_error('prenom'); ?></span>
             </div>
             <div class="form-group">
-              <label for="id">Identifiant <span class="star">*</span></label>
-              <input type="text" name="id" class="form-control form-control-lg" id="id" placeholder ="Identifiant">
+              <label for="id">E-mail <span class="star">*</span></label>
+              <input type="mail" name="id" class="form-control form-control-lg" id="id" placeholder ="votremail@domain.fr">
               <span><?php echo form_error('id'); ?></span>
             </div>
             <div class="form-group">
               <label for="mdp">Mot de passe <span class="star">*</span></label>
-              <input type="password" name="mdp" class="form-control form-control-lg" id="mdp" onfocus="if(this.value =='Mot de passe'){this.value =''}" onblur="if(this.value ==''){this.value ='Mot de pass'}" value ="Mot de passe">
+              <input type="password" name="mdp" class="form-control form-control-lg" id="mdp" placeholder="Mot de passe">
               <span><?php echo form_error('mdp'); ?></span>
             </div>
             <div class="form-group">

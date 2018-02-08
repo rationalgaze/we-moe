@@ -48,3 +48,12 @@ main {
 form span.star {
   color: red;
 }
+
+.socials a {
+  text-decoration: none;
+  color: #90a4ae;
+}
+
+.socials a:hover {
+  color: #455a64;
+}
