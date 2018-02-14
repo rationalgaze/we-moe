@@ -19,11 +19,11 @@
               <input type="text" name="nom" class="form-control form-control-lg" id="nom" placeholder="Nom">
               <span><?php echo form_error('nom'); ?></span>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="nomdusage">Nom d'usage</label>
               <input type="text" name="nomdusage" class="form-control form-control-lg" id="nomdusage" placeholder="Nom d'usage">
               <span><?php echo form_error('nomdusage'); ?></span>
-            </div>
+            </div> -->
             <div class="form-group">
               <label for="prenom">Prenom <span class="star">*</span></label>
               <input type="text" name="prenom" class="form-control form-control-lg" id="prenom" placeholder="Prenom">
@@ -38,6 +38,13 @@
               <label for="mdp">Mot de passe <span class="star">*</span></label>
               <input type="password" name="mdp" class="form-control form-control-lg" id="mdp" placeholder="Mot de passe">
               <span><?php echo form_error('mdp'); ?></span>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" name="ras" class="custom-control-input form-control-lg" id="ras">
+                <label for="ras" class="custom-control-label">Vous étes une personne à Risque Aggravé de Santé ? <span class="star">*</span></label>
+              </div>
+              <span><?php echo form_error('ras'); ?></span>
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-primary">Valider</button>
