@@ -26,7 +26,7 @@
                 echo '
                   <div class="form-group">
                     <label for="id">Identifiant</label>
-                    <input type="text" name="id" class="form-control form-control-lg is-invalid" id="id" placeholder="Identifiant">
+                    <input type="text" name="id" class="form-control form-control-lg is-invalid" id="id" placeholder="mail@exemple.ex">
                     <div class="text-danger mt-2">
                       <?php echo form_error("id"); ?>
                     </div>
@@ -45,7 +45,7 @@
                 echo '
                 <div class="form-group">
                   <label for="id">Identifiant</label>
-                  <input type="text" name="id" class="form-control form-control-lg" id="id" placeholder="Identifiant" required>
+                  <input type="text" name="id" class="form-control form-control-lg" id="id" placeholder="mail@exemple.ex" required>
                   <div class="text-danger mt-2">
                     <?php echo form_error("id"); ?>
                   </div>

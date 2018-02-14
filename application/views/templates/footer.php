@@ -10,7 +10,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="copyrights">
-          <p>&copy; <?php echo date('Y'); ?> - We-moë.</p>
+          <span>&copy; <?php echo date('Y'); ?> - We-moë.</span>
         </div>
       </div>
     </footer>

@@ -4,15 +4,14 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
   text-align: left;
   background-color: #fff;
 }
 
 .blog-header {
-    line-height: 1;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 3rem 2rem;
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 3rem 2rem;
 }
 
 .nav {
