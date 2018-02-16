@@ -13,10 +13,13 @@
     <div class="row mb-2 justify-content-center">
       <div class="col-4"> 
         <div class="signupForm">
-          <form method="post" action="<?php echo base_url(); ?>index.php">
+          <form method="post" class="needs-validation" action="" novalidate>
             <div class="form-group">
               <label for="nom">Nom <span class="star">*</span></label>
-              <input type="text" name="nom" class="form-control form-control-lg" id="nom" placeholder="Nom">
+              <input type="text" name="nom" class="form-control form-control-lg" id="nom" placeholder="Nom" required>
+              <div class="invalid-feedback">
+                Entrez votre nom s'il vous plaît
+              </div>
               <span><?php echo form_error('nom'); ?></span>
             </div>
             <!-- <div class="form-group">
@@ -26,23 +29,32 @@
             </div> -->
             <div class="form-group">
               <label for="prenom">Prenom <span class="star">*</span></label>
-              <input type="text" name="prenom" class="form-control form-control-lg" id="prenom" placeholder="Prenom">
+              <input type="text" name="prenom" class="form-control form-control-lg" id="prenom" placeholder="Prenom" required>
+              <div class="invalid-feedback">
+                Entrez votre prenom s'il vous plaît
+              </div>
               <span><?php echo form_error('prenom'); ?></span>
             </div>
             <div class="form-group">
               <label for="id">E-mail <span class="star">*</span></label>
-              <input type="mail" name="id" class="form-control form-control-lg" id="id" placeholder ="votremail@domain.fr">
+              <input type="mail" name="id" class="form-control form-control-lg" id="id" placeholder ="votremail@domain.fr" required>
               <span><?php echo form_error('id'); ?></span>
             </div>
             <div class="form-group">
               <label for="mdp">Mot de passe <span class="star">*</span></label>
-              <input type="password" name="mdp" class="form-control form-control-lg" id="mdp" placeholder="Mot de passe">
+              <input type="password" name="mdp" class="form-control form-control-lg" id="mdp" placeholder="Mot de passe" required>
+              <div class="invalid-feedback">
+                Entrez votre adresse s'il vous plaît
+              </div>
               <span><?php echo form_error('mdp'); ?></span>
             </div>
             <div class="form-group">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" name="ras" class="custom-control-input form-control-lg" id="ras">
+                <input type="checkbox" name="ras" class="custom-control-input form-control-lg" id="ras" required>
                 <label for="ras" class="custom-control-label">Vous étes une personne à Risque Aggravé de Santé ? <span class="star">*</span></label>
+                <div class="invalid-feedback">
+                  Cochez le cas s'il vous plaît
+                </div>
               </div>
               <span><?php echo form_error('ras'); ?></span>
             </div>

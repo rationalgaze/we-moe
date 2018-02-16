@@ -1,3 +1,5 @@
 #ignorer les configurations 
 /application/config/*
 /application/libraries/*
+
+/vendor/

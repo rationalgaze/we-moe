@@ -8,7 +8,6 @@
     <link rel="stylesheet" href='<?php echo base_url();?>styles/main.css'>
     <link rel="stylesheet" href='<?php echo base_url();?>styles/bootstrap.min.css'>
     <link rel="stylesheet" href='<?php echo base_url();?>styles/fontawesome-all.min.css'>
-    <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
 </head>
 <body>
   <header class="blog-header mb-2">

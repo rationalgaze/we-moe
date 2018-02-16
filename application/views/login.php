@@ -16,8 +16,7 @@
     <div class="row mb-2 justify-content-center">
       <div class="col-4"> 
         <div class="signupForm">
-          <form method="post" action="<?php echo base_url(); ?>index.php/login/login_validation">
-            
+          <form method="post" action="<?php echo base_url(); ?>index.php/login/login_validation" class="needs-validation" novalidate>            
             <?php
               if ($this->session->flashdata("error")) {
                 echo '<div class="alert alert-danger" role="alert">';
@@ -26,14 +25,14 @@
                 echo '
                   <div class="form-group">
                     <label for="id">Identifiant</label>
-                    <input type="text" name="id" class="form-control form-control-lg is-invalid" id="id" placeholder="mail@exemple.ex">
+                    <input type="text" name="id" class="form-control form-control-lg is-invalid" id="id" placeholder="mail@exemple.ex" required>
                     <div class="text-danger mt-2">
                       <?php echo form_error("id"); ?>
-                    </div>
+                    </div>                    
                   </div>
                   <div class="form-group">
                     <label for="mdp">Mot de passe</label>
-                    <input type="password" name="mdp" class="form-control form-control-lg is-invalid" id="mdp" placeholder ="Mot de passe">
+                    <input type="password" name="mdp" class="form-control form-control-lg is-invalid" id="mdp" placeholder ="Mot de passe" required>
                     <div class="text-danger mt-2">
                       <?php echo form_error("mdp"); ?>
                     </div>
@@ -46,6 +45,9 @@
                 <div class="form-group">
                   <label for="id">Identifiant</label>
                   <input type="text" name="id" class="form-control form-control-lg" id="id" placeholder="mail@exemple.ex" required>
+                  <div class="invalid-feedback">
+                    Entrez votre adresse s\'il vous plaît
+                  </div>
                   <div class="text-danger mt-2">
                     <?php echo form_error("id"); ?>
                   </div>
@@ -53,14 +55,17 @@
                 <div class="form-group">
                   <label for="mdp">Mot de passe</label>
                   <input type="password" name="mdp" class="form-control form-control-lg" id="mdp" placeholder ="Mot de passe" required>
+                  <div class="invalid-feedback">
+                    Entrez votre mot de passe s\'il vous plaît
+                  </div>
                   <div class="text-danger mt-2">
-                    <?php echo form_error("mdp"); ?>
+                    <?php echo form_error("id"); ?>
                   </div>
                 </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary">Valider</button>
-                </div>';
-              }
-            ?>
+                </div> ';
+              }  
+          ?>      
           </form>
         </div>
