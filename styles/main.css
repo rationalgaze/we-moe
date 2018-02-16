@@ -26,7 +26,6 @@ body {
 
 nav a:hover,
 nav a:active,
-nav a.active,
 nav a:focus {
   text-decoration: none;
   color: #455a64;
@@ -34,6 +33,62 @@ nav a:focus {
 
 .main-jumbo {
   background-color: #fcc000;
+}
+
+/* user profile styles */
+.profile {
+  background-color: #F7F8F8;  
+}
+
+aside.sidebar-nav {
+  width: 16rem;
+  position: sticky;
+  z-index: 1000;
+  height: 100vh;
+  background-color: #38454A;
+}
+
+aside .personal {
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+aside img.avatar {
+  width: 100%;
+  height: 23rem;
+}
+
+aside .profile-card {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 8rem;
+  color: #fff;
+}
+
+.profile-card a {
+  background-color: #fcc000;
+  color: #fff;
+}
+
+.profile-card a:hover,
+.profile-card a:focus {
+  background-color: #eab300;
+  color: #F7F8F8;
+}
+
+aside .nav a{
+  color: #768287;
+  border-top: 1px solid #44515E;
+}
+
+aside .nav a:hover,
+aside .nav a:active,
+aside .nav a.active,
+aside .nav a:focus {
+  color: #fff;
 }
 
 .blog-footer {

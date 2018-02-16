@@ -50,11 +50,11 @@ class Login extends CI_Controller {
   public function enter_user(){ 
     if($this->session->userdata('username') != '')  
     { 
-      $data['id'] = $this->session->userdata('username');
+      $data['email'] = $this->session->userdata('username');
       // $data['org'] = $this->session->userdata('id');
-      $this->load->view('templates/header');     
+      // $this->load->view('templates/header'); 
       $this->load->view('espace_personnel_utilisateur', $data);
-      $this->load->view('templates/footer');   
+      // $this->load->view('templates/footer');
   
     }  
     else  
