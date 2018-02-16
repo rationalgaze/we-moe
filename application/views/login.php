@@ -38,7 +38,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Valider</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Valider</button>
                   </div>';
               } else {
                 echo '
@@ -63,7 +63,7 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <button type="submit" class="btn btn-primary">Valider</button>
+                  <button type="submit" class="btn btn-primary btn-block btn-lg">Valider</button>
                 </div> ';
               }  
           ?>      
