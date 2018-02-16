@@ -26,8 +26,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `login`, `password`, `status`) VALUES
-(1, 'admin', '123', 'admin'),
-(2, 'user', '321', 'user');
+(1, 'admin@wemoe.fr', '123', 'admin'),
+(2, 'user@wemoe.fr', '321', 'user');
 
 --
 -- Indexes for dumped tables
