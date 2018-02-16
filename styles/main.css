@@ -32,6 +32,10 @@ nav a:focus {
   color: #455a64;
 }
 
+.main-jumbo {
+  background-color: #fcc000;
+}
+
 .blog-footer {
     padding: 2.5rem 0;
     color: #999;

@@ -23,13 +23,18 @@ class Login extends CI_Controller {
     {
       $username = $this->input->post('id');  
       $password = $this->input->post('mdp');  
-
-      if($this->login_model->admin_login($username, $password))  
+      
+      if($this->login_model->try_login($username, $password) == 1)  
       {  
         $session_data = array('username' => $username);
         $this->session->set_userdata($session_data);
-        redirect(base_url().'index.php/login/enter'); 
-      }  
+        redirect(base_url().'index.php/login/enter_user'); 
+      }
+      elseif ($this->login_model->try_login($username, $password) == 0) {
+        $session_data = array('username' => $username);
+        $this->session->set_userdata($session_data);
+        redirect(base_url().'index.php/login/enter_admin'); 
+      }
       else  
       {  
         $this->session->set_flashdata('error', 'Idetifiant ou mot de passe incorrect');  
@@ -42,15 +47,29 @@ class Login extends CI_Controller {
     }
   }
 
-  public function enter(){ 
+  public function enter_user(){ 
     if($this->session->userdata('username') != '')  
     { 
       $data['id'] = $this->session->userdata('username');
       // $data['org'] = $this->session->userdata('id');
       $this->load->view('templates/header');     
-      $this->load->view('session_opened', $data);
+      $this->load->view('espace_personnel_utilisateur', $data);
       $this->load->view('templates/footer');   
   
+    }  
+    else  
+    {  
+      redirect(base_url().'index.php/login/signin');
+    }  
+  }
+
+  public function enter_admin(){ 
+    if($this->session->userdata('username') != '')  
+    { 
+      $data['id'] = $this->session->userdata('username');
+      $this->load->view('templates/header');     
+      $this->load->view('espace_personnel_administrateur', $data);
+      $this->load->view('templates/footer');
     }  
     else  
     {  

@@ -6,19 +6,23 @@ class Login_model extends CI_Model {
       $this->load->database();
     }
 
-    public function admin_login($login, $password)  
+    public function try_login($login, $password)  
     { 
       $this->db->from('users');
       $this->db->where('login', $login);  
       $this->db->where('password', $password);  
-      $this->db->where('status', "admin");
+      
       $query = $this->db->get();  
 
       if($query->num_rows() > 0){
-        return true;
+        $row = $query->first_row();
+        
+        if($row->status == "user") return 1;
+        elseif($row->status == "admin") return 0;
+        else return -1;
       }
       else{
-        return false;  
+        return -1;  
       }
     } 
 }
