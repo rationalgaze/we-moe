@@ -13,6 +13,7 @@ class Login extends CI_Controller {
     $this->load->view('templates/header');
 		$this->load->view('login');
     $this->load->view('templates/footer');
+    $this->load->view('templates/scripts');
 	}
 
   public function login_validation(){
@@ -51,11 +52,9 @@ class Login extends CI_Controller {
     if($this->session->userdata('username') != '')  
     { 
       $data['email'] = $this->session->userdata('username');
-      // $data['org'] = $this->session->userdata('id');
-      // $this->load->view('templates/header'); 
+
       $this->load->view('espace_personnel_utilisateur', $data);
-      // $this->load->view('templates/footer');
-  
+      $this->load->view('templates/scripts');
     }  
     else  
     {  
@@ -67,9 +66,8 @@ class Login extends CI_Controller {
     if($this->session->userdata('username') != '')  
     { 
       $data['id'] = $this->session->userdata('username');
-      $this->load->view('templates/header');     
       $this->load->view('espace_personnel_administrateur', $data);
-      $this->load->view('templates/footer');
+      $this->load->view('templates/scripts');
     }  
     else  
     {  
