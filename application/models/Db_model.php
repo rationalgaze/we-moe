@@ -7,9 +7,16 @@ class Db_model extends CI_Model {
       $this->load->database();
     }
 
-    public function get_mongo()
+    public function get_allUsers()
     {
-      $query = $this->mongo_db->get('accidents2015');
+      $query = $this->mongo_db->get('users');
+      return $query;
+    }
+
+    public function get_user($login)
+    {
+      $query = $this->mongo_db->where('mail', $login)->get('users');
+
       return $query;
     }
 
