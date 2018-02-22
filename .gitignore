@@ -1,5 +1,5 @@
 #ignorer les configurations 
 /application/config/*
 /application/libraries/*
-
+/node_modules/
 /vendor/
