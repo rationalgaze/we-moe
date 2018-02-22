@@ -1,7 +1,7 @@
 db.createCollection("users");
 db.users.insertMany([
   {
-    id: "1",
+    _id: 1,
     nom: "Doe",
     prenom: "John",
     mail: "",
@@ -10,7 +10,7 @@ db.users.insertMany([
     ras: 0,
   },
   {
-    id: "2",
+    _id: 2,
     nom: "Doe",
     prenom: "Jane",
     mail:"user@wemoe.fr",

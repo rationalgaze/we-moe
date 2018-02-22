@@ -16,13 +16,6 @@ class Db_model extends CI_Model {
     public function get_user($login)
     {
       $query = $this->mongo_db->where('mail', $login)->get('users');
-
       return $query;
-    }
-
-    public function get_mysql()
-    {
-      $query = $this->db->get('newtable');
-      return $query->result_array();
     }
 }

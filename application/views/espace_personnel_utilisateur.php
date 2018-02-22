@@ -38,8 +38,8 @@
                   <h3 class="mb-0"><?php echo $mongo[0]['nom'];?> <?php echo $mongo[0]['prenom'];?></h3>
                   <p class="text-warning"><?php echo $email; ?></p>
                   <div>
-                    <div>Age : <?php echo (date('Y') - $mongo[0]['annee_naiss']);?></div>
-                    <div>De : <?php echo $mongo[0]['ville'];?></div>
+                    <!-- <div>Age : <?php echo (date('Y') - $mongo[0]['annee_naiss']);?></div> -->
+                    <!-- <div>De : <?php echo ($mongo[0]['ville']) ? $mongo[0]['ville'] : '';?></div> -->
                     <div>En risque : <?php echo ($mongo[0]['ras'] == 0) ? "No" :  "Yes";?></div>
                   </div>
                   <hr>
@@ -49,19 +49,19 @@
           </div>
         </div>
         <div class="row help mb-2">
-          <div class="col-4 px-3 text-center">
+          <div class="col-4 col-xs-12 px-3 text-center">
             <div class="personal-info bg-white rounded py-5 px-3">
               <h4 class="pb-4 text-warning">Questionnaire</h4>
               <a href="#" class="block"><i class="fas fa-clipboard fa-7x mr-2"></i></a>
             </div>
           </div>
-          <div class="col-4 px-3 text-center">
+          <div class="col-4 col-xs-12 px-3 text-center">
             <div class="personal-info bg-white rounded py-5 px-3">
               <h4 class="pb-4 text-warning">Télécharger kit d’aide</h4>
               <a href="#" class="block"><i class="fas fa-download fa-7x mr-2"></i></a>
             </div>
           </div>
-          <div class="col-4 px-3 text-center">
+          <div class="col-4 col-xs-12 px-3 text-center">
             <div class="personal-info bg-white rounded py-5 px-3">
               <h4 class="pb-4 text-warning">Contrat collectif</h4>
               <a href="#" class="block"><i class="fas fa-handshake fa-7x mr-2"></i></a>

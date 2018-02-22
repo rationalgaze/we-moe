@@ -45,6 +45,7 @@ class Login extends CI_Controller {
     }
     else
     {
+      echo "ici";
       $this->signIn();
     }
   }

@@ -13,7 +13,7 @@
   <header class="blog-header mb-2">
     <div class="row flex-nowrap justify-content-between align-items-center">
       <div class="col-4 pt-1">
-        <a class="text-muted" href="<?php echo base_url();?>index.php/inscription/signUp">S'inscrire</a>
+        <a class="text-muted" href="<?php echo base_url();?>index.php/signup/signup">S'inscrire</a>
       </div>
       <div class="col-4 text-center">
         <a class="blog-header-logo" href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/cropped-logoWeMoe.jpg" alt="we-moë logo"></a>
