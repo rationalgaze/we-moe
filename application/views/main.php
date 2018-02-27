@@ -18,26 +18,28 @@
         <p class="lead my-3">
           15 millions d'hommes et de femmes exclus potentiellement de l'emprunt bancaire pourtant souvent nécessaire pour mener à bien ses rêves. 
         </p>
-        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
       </div>
     </div>
   </div>
   <main class="container">
     <div class="row mb-2">
       <div class="col column"> 
-<!-- 
-        <?php foreach($mysql as $el ): ?>   
-          <div>
-            <?php echo $el['id']; ?>
-            <?php echo $el['nom']; ?>
-            <?php echo $el['prenom']; ?>
+        <div class="col-12 px-3 mb-4 text-center">
+          <div class="personal-info bg-white rounded py-5 px-3">
+            <h4 class="pb-4">Actualites</h4>
+            
+            <div class="row mb-2 justify-content-center">
+              <div class="col-4 ">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="e-mail" aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="input-group-append">
+                    <button class="btn btn-warning" type="button">S'inscrire</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        <?php endforeach; ?>
-
-
-        <?php foreach($mongo as $mel ): ?>
-          <div>
-            <?php echo $mel['_id']; ?>
-            <?php echo $mel['features'][0]['type']; ?>
-          </div>
-        <?php endforeach; ?> -->
+        </div>

@@ -6,6 +6,7 @@ body {
   line-height: 1.5;
   text-align: left;
   background-color: #fff;
+  min-height: 100vh;
 }
 
 .blog-header {
@@ -39,13 +40,14 @@ nav a:focus {
 .profile {
   background-color: #F7F8F8;
   color: #455a64;
+  min-height: 100vh;
 }
 
 aside.sidebar-nav {
   width: 16rem;
   position: sticky;
   z-index: 1000;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #38454A;
 }
 
@@ -60,7 +62,44 @@ aside .disconnect {
   height: 13rem;
   overflow: hidden;
   margin: 0 auto;
-  /*background-image: url("http://wemoe.fr/images/portman.jpg");*/
+  position: relative;
+  z-index: 1000;
+}
+
+.avatar {
+  display: block;
+  width: 13rem;
+  height: 13rem;
+  background-color: transparent;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar figcaption {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  opacity: 0;
+  z-index: 100;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.avatar:hover {
+  background-color: #000;
+  outline: 0;
+}
+
+.avatar:hover img {
+  opacity: .35;
+  transform: scale(1.015);
+}
+
+.avatar:hover figcaption {
+  opacity: 1;
 }
 
 .disconnect a {
@@ -97,6 +136,16 @@ main .help a.block:active {
   color: #3EBDFF;
 }
 
+.profile main .num {
+  font-size: 3rem;
+  color: #3EBDFF; 
+}
+
+.list-users li {
+  list-style: none;
+}
+
+/* footer*/
 .blog-footer {
     padding: 2.5rem 0;
     color: #999;

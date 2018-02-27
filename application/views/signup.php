@@ -56,13 +56,13 @@
               <span class="text-danger"><?php echo form_error('mdp'); ?></span>
             </div>
             
-            <div class="form-group">
+           <!--  <div class="form-group">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" name="ras" class="custom-control-input form-control-lg" id="ras" value="0" <?php echo set_checkbox('ras', '1'); ?> onclick="(this.value==0) ? (this.value=1) : (this.value=0);">
+                <input type="checkbox" name="ras" class="custom-control-input form-control-lg" id="ras" value="0" onclick="(this.value==0) ? (this.value=1) : (this.value=0);">
                 <label for="ras" class="custom-control-label">Vous étes une personne à Risque Aggravé de Santé ?</label>
               </div>
               <span class="text-danger"><?php echo form_error('ras'); ?></span>
-            </div>
+            </div> -->
             <div class="form-group">
               <button type="submit" class="btn btn-primary btn-block">Valider</button>
             </div>

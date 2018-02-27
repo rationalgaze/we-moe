@@ -30,7 +30,7 @@ class Signup_model extends CI_Model {
       $query = $this->db->insert('users', 
         array(
           'login' => $mail, 
-          'password' => $pass, 
+          'password' => $pass,
           'status' => 'user'
         )
       );
@@ -44,10 +44,10 @@ class Signup_model extends CI_Model {
       $insertId = $this->mongo_db->insert('users', 
         [
           '_id'     => $usr_id,
-          'nom'     => $lame,
+          'nom'     => $lname,
           'prenom'  => $name,
           'mail'    => $mail,
-          'ras'    => $ras
+          'ras'     => $ras
         ]
       );
 

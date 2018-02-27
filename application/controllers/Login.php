@@ -55,9 +55,6 @@ class Login extends CI_Controller {
     { 
       $data['email'] = $this->session->userdata('username');
       $data['mongo'] = $this->db_model->get_user($this->session->userdata('username'));
-      // echo '<pre>';
-      // print_r($data['mysql'][0]);
-      // print_r($data['mongo']);
       $this->load->view('espace_personnel_utilisateur', $data);
       $this->load->view('templates/scripts');
     }  
@@ -70,7 +67,9 @@ class Login extends CI_Controller {
   public function enter_admin(){ 
     if($this->session->userdata('username') != '')  
     { 
-      $data['id'] = $this->session->userdata('username');
+      $data['email'] = $this->session->userdata('username');
+      $data['mongo'] = $this->db_model->get_user($this->session->userdata('username'));
+      $data['users'] = $this->db_model->get_allUsers();
       $this->load->view('espace_personnel_administrateur', $data);
       $this->load->view('templates/scripts');
     }  

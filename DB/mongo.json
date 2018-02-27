@@ -2,11 +2,9 @@ db.createCollection("users");
 db.users.insertMany([
   {
     _id: 1,
-    nom: "Doe",
-    prenom: "John",
-    mail: "",
-    annee_naiss: "1998",
-    ville:"Paris",
+    nom: "Le Moing",
+    prenom: "Gaïdig",
+    mail: "admin@wemoe.fr",
     ras: 0,
   },
   {
@@ -14,8 +12,11 @@ db.users.insertMany([
     nom: "Doe",
     prenom: "Jane",
     mail:"user@wemoe.fr",
-    annee_naiss: "1999",
-    ville:"Brest",
     ras: 1,
   }
 ]);
+
+db.users.update(
+  {prenom: "Nikolai"},
+  {$set: {nom: "Vorotnikov"}}
+);

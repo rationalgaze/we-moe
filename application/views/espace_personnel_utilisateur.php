@@ -21,7 +21,7 @@
           <a class="nav-link" href="<?php echo base_url();?>"><i class="fas fa-home mr-2"></i> Acceuil</a>
           <a class="nav-link" href="#"><i class="far fa-envelope mr-2"></i> Nous contacter</a>
           <a class="nav-link" href="#"><i class="far fa-question-circle mr-2"></i> FAQ</a>
-          <a class="nav-link disabled" href="#"><i class="fab fa-accessible-icon mr-2"></i> Disabled</a>
+          <a class="nav-link disabled" href="#"><i class="fab fa-accessible-icon mr-2"></i> Aide</a>
         </nav>
       </aside>
       <main class="col py-md-3">
@@ -31,7 +31,15 @@
               <div class="row py-3">
                 <div class="col-xl-3 col-md-4 col-xs-12 text-center">
                   <div class="usr-avatar rounded-circle text-center">
-                    <img src="<?php echo base_url();?>images/portman.jpg" class="usr-photo" alt="avatar">
+                    <!-- <img src="<?php echo base_url();?>images/portman.jpg" class="usr-photo" alt="avatar"> -->
+                    <a href="#" class="avatar">
+                      <figure>
+                        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Avatar" width="208" height="208">
+                        <figcaption>
+                          <i class="far fa-envelope mr-2"></i>
+                        </figcaption>
+                      </figure>
+                    </a>
                   </div>
                 </div>
                 <div class="col-xl-9 col-md-8 col-xs-12">
@@ -40,7 +48,7 @@
                   <div>
                     <!-- <div>Age : <?php echo (date('Y') - $mongo[0]['annee_naiss']);?></div> -->
                     <!-- <div>De : <?php echo ($mongo[0]['ville']) ? $mongo[0]['ville'] : '';?></div> -->
-                    <div>En risque : <?php echo ($mongo[0]['ras'] == 0) ? "No" :  "Yes";?></div>
+                    <!-- <div>En risque : <?php echo ($mongo[0]['ras'] == 0) ? "Non" :  "Oui";?></div> -->
                   </div>
                   <hr>
                 </div>
@@ -49,22 +57,30 @@
           </div>
         </div>
         <div class="row help mb-2">
-          <div class="col-4 col-xs-12 px-3 text-center">
+          <div class="col-xl-4 col-xs-12 col-sm-6 px-3 mb-4 text-center">
             <div class="personal-info bg-white rounded py-5 px-3">
               <h4 class="pb-4 text-warning">Questionnaire</h4>
               <a href="#" class="block"><i class="fas fa-clipboard fa-7x mr-2"></i></a>
             </div>
           </div>
-          <div class="col-4 col-xs-12 px-3 text-center">
+          <div class="col-xl-4 col-xs-12 col-sm-6 px-3 mb-4 text-center">
             <div class="personal-info bg-white rounded py-5 px-3">
               <h4 class="pb-4 text-warning">Télécharger kit d’aide</h4>
               <a href="#" class="block"><i class="fas fa-download fa-7x mr-2"></i></a>
             </div>
           </div>
-          <div class="col-4 col-xs-12 px-3 text-center">
+          <div class="col-xl-4 col-xs-12 col-sm-6 px-3 mb-4 text-center">
             <div class="personal-info bg-white rounded py-5 px-3">
               <h4 class="pb-4 text-warning">Contrat collectif</h4>
               <a href="#" class="block"><i class="fas fa-handshake fa-7x mr-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row help mb-2">
+          <div class="col-12 px-3 mb-4 text-center">
+            <div class="personal-info bg-white rounded py-5 px-3">
+              <h4 class="pb-4 text-warning">Actualites</h4>
+              <!-- <button href="#" class="btn btn-danger">S'inscrire</button> -->
             </div>
           </div>
         </div>
